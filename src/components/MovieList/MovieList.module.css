@@ -1,0 +1,36 @@
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.noMovies {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+@media (max-width: 1200px) {
+  .movieList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .movieList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movieList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .movieList {
+    grid-template-columns: 1fr;
+  }
+}
